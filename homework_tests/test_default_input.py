@@ -46,6 +46,7 @@ def test_check_button_size_adjustment():
     chrome_driver.set_window_size(542, 554)
     width_after = chrome_driver.find_element(By.CSS_SELECTOR, ".btn-success").value_of_css_property('width')
     assert width_before != width_after
+    chrome_driver.quit()
 
 
 def test_default_input_page_title():
