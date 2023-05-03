@@ -45,7 +45,7 @@ def test_empty_values_with_highlight_result_button():
 
 
 def test_empty_values_with_leave_vowels_and_highlight_result_button():
-    sleep(5)
+    sleep(6)
     chrome_driver.find_element(By.CSS_SELECTOR, ".btn:nth-child(1)").click()
     chrome_driver.find_element(By.CSS_SELECTOR, ".btn-success").click()
     test_output_vowels = chrome_driver.find_element("id", "text_output").text
